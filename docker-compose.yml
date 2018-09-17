@@ -11,6 +11,7 @@ services:
 
   schelly:
     image: flaviostutz/schelly
+    # image: schelly_schelly
     ports:
       - 8080:8080
     environment:

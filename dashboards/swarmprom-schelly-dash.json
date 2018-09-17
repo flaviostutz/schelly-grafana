@@ -79,8 +79,8 @@
         "refId": "A"
       }],
       "thresholds": "2,1,0",
-      "timeFrom": "2d",
-      "title": "Successful backups",
+      "timeFrom": null,
+      "title": "Successful Backups",
       "transparent": false,
       "type": "singlestat",
       "valueFontSize": "170%",
@@ -148,14 +148,15 @@
       },
       "tableColumn": "",
       "targets": [{
-        "expr": "schelly_backup_materialized_total{status=\"error\",status=\"cancelled\"}",
+        "expr": "sum(schelly_backup_warn_total)",
         "format": "time_series",
+        "hide": false,
         "intervalFactor": 1,
         "refId": "A"
       }],
-      "thresholds": "0,1,2",
-      "timeFrom": "2d",
-      "title": "Failed backups",
+      "thresholds": "1,10",
+      "timeFrom": null,
+      "title": "Backup Errors",
       "type": "singlestat",
       "valueFontSize": "170%",
       "valueMaps": [{
@@ -671,5 +672,5 @@
   "timezone": "",
   "title": "Schelly Backups",
   "uid": "A4zYrETmk",
-  "version": 2
+  "version": 3
 }
