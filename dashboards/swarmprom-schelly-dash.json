@@ -641,7 +641,7 @@
     "list": []
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-24h",
     "to": "now"
   },
   "timepicker": {
@@ -672,5 +672,5 @@
   "timezone": "",
   "title": "Schelly Backups",
   "uid": "A4zYrETmk",
-  "version": 3
+  "version": 4
 }
